@@ -19,6 +19,7 @@ time.sleep(2)
 search_icon_locator = By.CSS_SELECTOR, 'span.tm-svg-icon__wrapper'
 search_icon = driver.find_element(*search_icon_locator)
 search_icon.click()
+
 #посчитать количество записей
 article_locator = By.TAG_NAME, 'article'
 articles = driver.find_elements(*article_locator)
