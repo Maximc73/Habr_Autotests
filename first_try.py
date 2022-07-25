@@ -28,6 +28,7 @@ article_locator = By.CSS_SELECTOR, 'article'
 articles = driver.find_elements(*article_locator)
 print(f'Number of articles is {len(articles)}')
 time.sleep(1)
+
 #посчитать количество страниц
 last_page_locator = By.XPATH, '(//*[@class="tm-pagination__page"])[last()]'
 last_page_number = driver.find_element(*last_page_locator)
