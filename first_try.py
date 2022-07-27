@@ -1,6 +1,8 @@
+import time
+
 from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.common.by import By
-import time
+
 driver = webdriver.WebDriver(executable_path='chromedriver.exe')
 driver.get('https://habr.com/ru/all/')
 time.sleep(2)
